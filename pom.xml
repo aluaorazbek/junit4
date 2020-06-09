@@ -142,7 +142,8 @@
             The MOJO stands for "Maven plain Old Java Object".
             Each mojo is an executable goal in Maven, and a plugin is a distribution of
             one or more related mojos.
-            For more information see http://maven.apache.org/plugin-developers/index.html
+            For more in
+ion see http://maven.apache.org/plugin-developers/index.html
 
             The following plugins are ordered according the Maven build lifecycle.
             http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
@@ -468,12 +469,19 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.13.0</version>
+                <configuration>
+                    <formats>
+                        <format>xml</format>
+                    </formats>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>3.0.0-M4</version>
+                
             </plugin>
+            
         </plugins>
     </reporting>
 
